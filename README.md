@@ -1,4 +1,4 @@
-# penn-blue
+# Minesweeper
 main
 
 Alex Holden
