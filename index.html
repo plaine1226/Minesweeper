@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Minesweeper</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kameron">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body oncontextmenu="return false;">
+        <h1>Minesweeper</h1>
+        <h3 id="play-message">Click Any Cell To Start!</h3>
+        <h4 id="stopwatch"></h4>
+        <div class="gameContainer">
+            <div id="message-container"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"> <img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="cell"><img src="images/unclicked.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
